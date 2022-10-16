@@ -1,0 +1,37 @@
+1. В папката са добавени следните:
+- TradeStreamCommonData - Solution с отделените данни, използвани в модулите като: клас за връзка с база, обектите от базата, енъми и др.
+- TradeStreamCommonDataPackage - Билднат NuGet пакет от TradeStreamCommonData.
+- TradeStream - Solution на приложението, което прави връзка с базата данни, чете от web socket И записва в съответната база.
+- TradeStreamAPI - Solution на WebAPI, в който има имплементирани два GET метода според описанието.
+- TradeStreamConsole - Solution на конзолното приложение, което имплементира същите методи като TradeStreamAPI.
+- Built Applications - Билднати ексета за трите модула ( TradeStream, TradeStreamAPI, TradeStreamConsole ).
+- DatabasePrepareScript.sql - Скрипт, който добавя база данни, таблицата, използвана в приложението и индекси към тази таблица.
+. В скрипта има template параметри, които трябва да се попълнят.
+
+2. За да се ръннат приложенията са нужни:
+- SQL Server 2019 Developer - изтеглена от https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+. SQL връзката с базата от приложението се прави посредством SQL Server Authentication т.е. логване в сървъра с User и парола ( обяснено по-долу ).
+- .NET Framework 6.0
+- Приложенията са разработени на Visual Studio Code
+
+3. При подход на билдване, приложенията трябва да се билднат, при което в папката на билда се добавят ексетата, както и конфигурационни файлове, които са обяснени по-долу как се попълват.
+3.1 При подход на рънване (пускане на приложенията от папка Built Applications ) се влиза в съответните папки и се попълват нужните данни в конфигуцатионните файлове
+- В TradeStreamServer има файл "TradeStream.dll.config", в който са добавени следните четири параметъра:
+- В TradeStreamAPI Има файл "TradeStreamAPI.dll.config", в който са добавени следните четири параметъра:
+- В TradeStreamConsole Има файл "TradeStreamConsole.dll.config", в който са добавени следните четири параметъра:
+
+<add key="DataSource" value=""/> - Име на SQL Server-а
+<add key="Catalog" value=""/> - Име на базата данни
+<add key="User" value=""/> - Потребител, служещ за логване в базата данни
+<add key="Password" value=""/> - Парола на потребителя
+
+Пример:
+
+<add key="DataSource" value="LAPTOP-O1MKG6L7"/>
+<add key="Catalog" value="DataStreamCatalog"/>
+<add key="User" value="DataStreamUser"/>
+<add key="Password" value="DataStreamPass"/>
+
+4. При рънване на сървъра се стартира конзола с изписана информация, стартира се connection към базата данни, web socket-а на Binance и прочетените данни се добавят в базата данни.
+5. При рънване на TradeStreamAPI се стартира WebAPI, като http port-а, на който се слуша е изписан на конзолата, която се визуализира.
+6. При рънване на TradeStreamConsole Се изписва информацията нужна за правилното работене с модула.

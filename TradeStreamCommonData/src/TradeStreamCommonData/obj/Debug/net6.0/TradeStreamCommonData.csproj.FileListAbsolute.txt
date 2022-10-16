@@ -1,0 +1,12 @@
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\bin\Debug\net6.0\TradeStreamCommonData.deps.json
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\bin\Debug\net6.0\TradeStreamCommonData.dll
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\bin\Debug\net6.0\TradeStreamCommonData.pdb
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.csproj.AssemblyReference.cache
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.AssemblyInfoInputs.cache
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.AssemblyInfo.cs
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.csproj.CoreCompileInputs.cache
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.dll
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\refint\TradeStreamCommonData.dll
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\TradeStreamCommonData.pdb
+C:\Users\silen\TradeStreamCommonData\src\TradeStreamCommonData\obj\Debug\net6.0\ref\TradeStreamCommonData.dll
