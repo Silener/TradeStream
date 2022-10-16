@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QbpV2UnciBYUDzGHKKlkGz78r15rVnJUKhDSvXfTiKo=",
+  "Source": "TradeStreamAPI",
+  "BasePath": "_content/TradeStreamAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
